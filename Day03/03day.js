@@ -59,7 +59,7 @@
 // console.log(largestNumber(a, b, c));
 
 
-// Activity 2: Switch case
+// Activity 3: Switch case
 
 // let day = 7
 
@@ -89,4 +89,55 @@
 //   default:
 //     console.log("Invalid day");
 //     break;
+// }
+
+
+// let grade = 91
+// switch (true) {
+//   case grade >= 90:
+//     console.log("A")
+//     break;
+//   case grade >= 80:
+//     console.log("B")
+//     break;
+//   case grade >= 70:
+//     console.log("C")
+//     break;
+//   case grade >= 60:
+//     console.log("D")
+//     break;
+//   case grade < 60:
+//     console.log("F")
+//     break;
+//   default:
+//     console.log("Invalid grade")
+//     break;
+
+// }
+
+
+// Activity 4: Conditional (Ternary) operator
+
+// let num = 7
+// let result = num % 2 === 0 ? "Even" : "Odd"
+// console.log(result)
+
+
+// Activity 5: Combining Conditions
+
+// let year = 2020
+// let isLeapYear = year % 4 === 0 && year % 100 !== 0 ? "Leap Year" : "Not a Leap Year"
+// console.log(isLeapYear)
+
+
+
+// if (year % 4 === 0) {
+//   if (year % 100 !== 0) {
+//     console.log("Leap Year")
+//   }
+//   else {
+//     console.log("Not a Leap Year")
+//   }
+// } else {
+//   console.log("Not a Leap Year");
 // }
