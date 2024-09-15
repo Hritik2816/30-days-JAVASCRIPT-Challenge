@@ -29,15 +29,15 @@
 
 // Activity 4: Array iteration
 
-// const myArray = [1, 2, 3, 4, 5];
+const myArray = [1, 2, 3, 4, 5];
 
-// for (let i = 0; i < myArray.length; i++) {
-//   console.log(myArray[i]);
-// }
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
 
-// myArray.forEach(element => {
-//   console.log(element);
-// });
+myArray.forEach(element => {
+  console.log(element);
+});
 
 // Activity 5: Multiple-Dimensional Array
 
