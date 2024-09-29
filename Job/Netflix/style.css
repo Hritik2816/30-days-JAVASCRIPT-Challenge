@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(Gilroy-Medium.ttf) format(truetype);
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  font-family: "Gilroy";
+  margin: 0;
+  padding: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg'); /* Replace with your background image */
+  background-size: cover; /* Scale the background image to cover the entire page */
+  background-position: center;
+}
+.header{
+ position: absolute;
+ width: 100%;
+ height: 60px;
+ display: flex;
+ justify-content: space-between;
+}
+.logo img{
+  width: 150px;
+  height: 40px;
+  margin-left: 150px;
+  padding-top: 15px;
+}
+.signIn{
+  display: flex;
+  margin-right: 150px;
+  padding-top: 15px;
+}
+/* Style the language selector container */
+.language-selector {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Style the language button */
+.language-button {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Style the language options dropdown */
+.language-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  display: none;
+  text-decoration: none;
+}
+
+/* Show the language options dropdown on hover */
+.language-selector:hover .language-options {
+  display: block;
+  text-decoration: none;
+}
+
+/* Style the language option links */
+.language-options a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Highlight the selected language option */
+.language-options a:hover {
+  background-color: #f0f0f0;
+}
+
+.signin-sel{
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.sign-in-btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.netflix-bg-img{
+height: 100px;
+}
+.about{
+  color: white;
+  text-align: center;
+  padding-top: 100;
+
+}
+.about h1{
+  font-size: 60px;
+  font-weight: bolder;
+}
+.about h5{
+  font-size: 20px;
+}
+.about p{
+  font-weight: 200;
+}
+
+.email{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.form-1 input{
+  height: 50px;
+  width: 350px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: transparent;
+  
+}
+.start-btn button{
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+}
