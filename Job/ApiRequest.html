@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="card-title">Instagram page of hitesh</h1>
+    <div class="photo">
+      <img class="profile-image" src="" alt="Profile Image">
+    </div>
+    <div class="button-group">
+      <button class="profile-button">profile</button>
+      <button class="follower-button">follower</button>
+    </div>
+    <div class="follower-count"></div>
+  </div>
+</body>
+<script>
+  let profile;
+  let follower;
+  let response;
+
+  const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', requestUrl);
+
+  xhr.onload = function () {
+    if (xhr.status >= 200 && xhr.status < 300) {
+      response = JSON.parse(xhr.responseText);
+      document.querySelector('.profile-button').addEventListener('click', function () {
+        document.querySelector('.profile-image').src = response.avatar_url;
+      });
+      document.querySelector('.follower-button').addEventListener('click', function () {
+        document.querySelector('.follower-count').innerText = `Followers: ${response.followers}`;
+      });
+    } else {
+      console.log('Request failed. Returned status of ' + xhr.status);
+    }
+  };
+
+  xhr.send();
+</script>
+
+</html>

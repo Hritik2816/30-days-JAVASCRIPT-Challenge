@@ -56,3 +56,55 @@
 //   B C D E F G H
 // A B C D E F G H I
 
+
+// function pattern(n) {
+//   for (let i = 0; i <= n; i++) {
+//     let row = "";
+//     for (let j = 0; j < i; j++) {
+//       row += "* "
+//     }
+//     console.log(row);
+//   }
+// }
+
+//   for (let i = n; i >= 1; i--) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//       row += "* "
+//     }
+//     console.log(row);
+//   }
+// }
+// pattern(5)
+
+function diamond(n) {
+  // Upper part of the diamond
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    // Add leading spaces
+    for (let j = n; j > i; j--) {
+      row += " ";
+    }
+    // Add stars
+    for (let j = 1; j <= (2 * i - 1); j++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+
+  // Lower part of the diamond
+  for (let i = n - 1; i >= 1; i--) {
+    let row = "";
+    // Add leading spaces
+    for (let j = n; j > i; j--) {
+      row += " ";
+    }
+    // Add stars
+    for (let j = 1; j <= (2 * i - 1); j++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+}
+
+diamond(5);
